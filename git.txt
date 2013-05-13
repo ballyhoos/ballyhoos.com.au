@@ -36,3 +36,18 @@ $ git commit -m "Enter a commit message"
 
 DELETE FILE TO REPOSITORY 
 $ git rm <filename>
+
+
+BRANCH - NEW
+$ git branch <name>
+
+BRANCH - SWITCH
+$ git checkout <name>
+#	switch to that branch
+
+BRNACH NEW & SWITCH
+$ git checkout -b <name>
+#	Switched to a new branch "<name>"
+#	This is shorthand for:
+
+
