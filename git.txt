@@ -45,9 +45,19 @@ BRANCH - SWITCH
 $ git checkout <name>
 #	switch to that branch
 
-BRNACH NEW & SWITCH
+BRANCH NEW & SWITCH
 $ git checkout -b <name>
 #	Switched to a new branch "<name>"
 #	This is shorthand for:
+
+BRANCH - UPLOAD
+#	Local branches shouldn't show up on github, no. Unless someone has said
+$ git push origin branch_name
+
+#	there is no way that origin (in this case, github) can know about the branch.
+#	If the branch no longer exists as a local branch, you can delete it from origin by
+
+$ git push origin :branch_name
+
 
 
