@@ -1,0 +1,71 @@
+#	https://bitbucket.org/ballyhoos/ballyhoos.com.au
+#	https://github.com/ballyhoos/ballyhoos.com.au/
+
+CHECKOUT A REPOSITORY - FIRST!
+$ git clone https://github.com/ballyhoos/ballyhoos.com.au .
+
+#	The "." at the end specifies the current folder as the checkout folder otherwise it will create ANOTHER folder!
+#	When cloning, ensure that you haven't "> git init" in the folder you are about to checkout into.
+
+
+CREATE GIT REPOSITORY
+/navigate/to/folder/$ git init
+
+#	navigate to the folder you want to start a respository in.
+
+VIEW THE STATUS OF THE CURRENT GIT REPOSITORY
+$ git status
+
+
+ADD REMOTE "NAMED" REPOSITORY 
+$ git remote add <name> <remote-url>
+
+
+PUSH TO REMOTE "NAMED" REPOSITORY 
+$ git push <name>
+
+
+ADD TO REPOSITORY 
+$ git add . 
+#	all files
+
+$ git add "*.php"
+#	specific files.
+
+
+COMMIT TO REPOSITORY 
+$ git commit -m "Enter a commit message"
+
+
+DELETE FILE TO REPOSITORY 
+$ git rm <filename>
+
+
+BRANCH - NEW
+$ git branch <name>
+
+BRANCH - SWITCH
+$ git checkout <name>
+#	switch to that branch
+
+BRANCH NEW & SWITCH
+$ git checkout -b <name>
+#	Switched to a new branch "<name>"
+#	This is shorthand for:
+
+BRANCH - PUSH TO REMOTE
+#	Local branches shouldn't show up on github, no. Unless someone has said
+$ git push master <branch>
+
+
+BRANCH - DELETE REMOTE 
+#	there is no way that origin (in this case, github) can know about the branch.
+#	If the branch no longer exists as a local branch, you can delete it from origin by
+$ git push master :<branch>
+
+BRANCH - DELETE LOCALLY 
+#	delete it locally
+$ git branch -D <branch>
+
+
+
